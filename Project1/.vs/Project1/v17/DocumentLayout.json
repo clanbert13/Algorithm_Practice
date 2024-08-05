@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\CodePrac\\Algorithm_Prac\\Project1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E665AE10-0BAC-4F91-868C-395CFB8D27A7}|Project1.vcxproj|D:\\CodePrac\\Algorithm_Prac\\Project1\\002BoardCover.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E665AE10-0BAC-4F91-868C-395CFB8D27A7}|Project1.vcxproj|solutionrelative:002BoardCover.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E665AE10-0BAC-4F91-868C-395CFB8D27A7}|Project1.vcxproj|D:\\CodePrac\\Algorithm_Prac\\Project1\\001PICNIC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E665AE10-0BAC-4F91-868C-395CFB8D27A7}|Project1.vcxproj|solutionrelative:001PICNIC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -19,6 +23,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "002BoardCover.cpp",
+              "DocumentMoniker": "D:\\CodePrac\\Algorithm_Prac\\Project1\\002BoardCover.cpp",
+              "RelativeDocumentMoniker": "002BoardCover.cpp",
+              "ToolTip": "D:\\CodePrac\\Algorithm_Prac\\Project1\\002BoardCover.cpp",
+              "RelativeToolTip": "002BoardCover.cpp",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAkwF8AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-24T05:38:53.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "001PICNIC.cpp",
               "DocumentMoniker": "D:\\CodePrac\\Algorithm_Prac\\Project1\\001PICNIC.cpp",
               "RelativeDocumentMoniker": "001PICNIC.cpp",
@@ -26,8 +43,7 @@
               "RelativeToolTip": "001PICNIC.cpp",
               "ViewState": "AQIAAC8AAAAAAAAAAAAkwDYAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-22T05:10:18.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-22T05:10:18.52Z"
             }
           ]
         }
