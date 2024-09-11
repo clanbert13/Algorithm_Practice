@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="001PICNIC.cpp" />
     <ClCompile Include="002BoardCover.cpp" />
+    <ClCompile Include="003Karatsuba.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
