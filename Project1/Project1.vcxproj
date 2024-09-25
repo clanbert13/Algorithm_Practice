@@ -130,6 +130,7 @@
     <ClCompile Include="001PICNIC.cpp" />
     <ClCompile Include="002BoardCover.cpp" />
     <ClCompile Include="003Karatsuba.cpp" />
+    <ClCompile Include="004ReverseQuadTree.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

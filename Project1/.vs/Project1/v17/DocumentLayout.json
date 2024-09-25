@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\Project1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E665AE10-0BAC-4F91-868C-395CFB8D27A7}|Project1.vcxproj|C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\Project1\\004ReverseQuadTree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E665AE10-0BAC-4F91-868C-395CFB8D27A7}|Project1.vcxproj|solutionrelative:004ReverseQuadTree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E665AE10-0BAC-4F91-868C-395CFB8D27A7}|Project1.vcxproj|C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\Project1\\003Karatsuba.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E665AE10-0BAC-4F91-868C-395CFB8D27A7}|Project1.vcxproj|solutionrelative:003Karatsuba.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -27,19 +31,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "004ReverseQuadTree.cpp",
+              "DocumentMoniker": "C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\Project1\\004ReverseQuadTree.cpp",
+              "RelativeDocumentMoniker": "004ReverseQuadTree.cpp",
+              "ToolTip": "C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\Project1\\004ReverseQuadTree.cpp",
+              "RelativeToolTip": "004ReverseQuadTree.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-25T03:29:30.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "003Karatsuba.cpp",
               "DocumentMoniker": "C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\Project1\\003Karatsuba.cpp",
               "RelativeDocumentMoniker": "003Karatsuba.cpp",
               "ToolTip": "C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\Project1\\003Karatsuba.cpp",
               "RelativeToolTip": "003Karatsuba.cpp",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAowIAAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAG4AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-11T03:46:05.854Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "002BoardCover.cpp",
               "DocumentMoniker": "C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\Project1\\002BoardCover.cpp",
               "RelativeDocumentMoniker": "002BoardCover.cpp",
@@ -51,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "001PICNIC.cpp",
               "DocumentMoniker": "C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\Project1\\001PICNIC.cpp",
               "RelativeDocumentMoniker": "001PICNIC.cpp",
