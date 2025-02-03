@@ -41,15 +41,39 @@
 */
 
 #include "iostream"
+#include "vector"
+
+using namespace std;
 
 int C;
+vector<int> answer;
+vector<int> h;
 
-int AreaCalc() {
+//left, right 범위 안에서 계산
+int AreaCalc(int left, int right) {
+	if (left == right) return h[left];	//판자가 1개일 때
 
 }
 
 int main() {
 
+	cin >> C;
+
+	for (int i = 0; i < C; i++) {
+		int cnt;	//판자의 개수
+		cin >> cnt;
+		while (cnt--)
+		{
+			int temp;
+			cin >> temp;
+			h.push_back(temp);
+		}
+		answer.push_back(AreaCalc(0, C));
+	}
+
+	for (int i = 0; i < C; i++) {
+		cout << answer[i] << endl;
+	}
 
 	return 0;
 }
