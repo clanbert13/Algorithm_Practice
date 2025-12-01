@@ -1,25 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\Project1\\",
+  "WorkspaceRootPath": "D:\\CodePrac\\Algorithm_Prac\\Algorithm_Practice\\Algorithm\u0026DataStructure\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C7A41D5-DDE8-4AF1-A3AF-CE5884A0D226}|..\\data structure\\data structure.vcxproj|C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\data structure\\001_PizzaTopping.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E665AE10-0BAC-4F91-868C-395CFB8D27A7}|Project1.vcxproj|D:\\CodePrac\\Algorithm_Prac\\Algorithm_Practice\\Algorithm\u0026DataStructure\\005CuttingFence7.4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E665AE10-0BAC-4F91-868C-395CFB8D27A7}|Project1.vcxproj|solutionrelative:005CuttingFence7.4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E665AE10-0BAC-4F91-868C-395CFB8D27A7}|Project1.vcxproj|C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\Project1\\004ReverseQuadTree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E665AE10-0BAC-4F91-868C-395CFB8D27A7}|Project1.vcxproj|solutionrelative:004ReverseQuadTree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E665AE10-0BAC-4F91-868C-395CFB8D27A7}|Project1.vcxproj|C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\Project1\\001PICNIC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E665AE10-0BAC-4F91-868C-395CFB8D27A7}|Project1.vcxproj|solutionrelative:001PICNIC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E665AE10-0BAC-4F91-868C-395CFB8D27A7}|Project1.vcxproj|C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\Project1\\003Karatsuba.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E665AE10-0BAC-4F91-868C-395CFB8D27A7}|Project1.vcxproj|D:\\CodePrac\\Algorithm_Prac\\Algorithm_Practice\\Algorithm\u0026DataStructure\\003Karatsuba.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E665AE10-0BAC-4F91-868C-395CFB8D27A7}|Project1.vcxproj|solutionrelative:003Karatsuba.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E665AE10-0BAC-4F91-868C-395CFB8D27A7}|Project1.vcxproj|C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\Project1\\002BoardCover.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E665AE10-0BAC-4F91-868C-395CFB8D27A7}|Project1.vcxproj|solutionrelative:002BoardCover.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E665AE10-0BAC-4F91-868C-395CFB8D27A7}|Project1.vcxproj|D:\\CodePrac\\Algorithm_Prac\\Algorithm_Practice\\Algorithm\u0026DataStructure\\004ReverseQuadTree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E665AE10-0BAC-4F91-868C-395CFB8D27A7}|Project1.vcxproj|solutionrelative:004ReverseQuadTree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,64 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "001_PizzaTopping.cpp",
-              "DocumentMoniker": "C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\data structure\\001_PizzaTopping.cpp",
-              "RelativeDocumentMoniker": "..\\data structure\\001_PizzaTopping.cpp",
-              "ToolTip": "C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\data structure\\001_PizzaTopping.cpp",
-              "RelativeToolTip": "..\\data structure\\001_PizzaTopping.cpp",
-              "ViewState": "AgIAAEUAAAAAAAAAAADwv0wAAAACAAAAAAAAAA==",
+              "Title": "005CuttingFence7.4.cpp",
+              "DocumentMoniker": "D:\\CodePrac\\Algorithm_Prac\\Algorithm_Practice\\Algorithm\u0026DataStructure\\005CuttingFence7.4.cpp",
+              "RelativeDocumentMoniker": "005CuttingFence7.4.cpp",
+              "ToolTip": "D:\\CodePrac\\Algorithm_Prac\\Algorithm_Practice\\Algorithm\u0026DataStructure\\005CuttingFence7.4.cpp",
+              "RelativeToolTip": "005CuttingFence7.4.cpp",
+              "ViewState": "AgIAABgAAAAAAAAAAAAQwDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-16T03:29:43.405Z",
+              "WhenOpened": "2025-02-03T07:34:39.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "004ReverseQuadTree.cpp",
+              "DocumentMoniker": "D:\\CodePrac\\Algorithm_Prac\\Algorithm_Practice\\Algorithm\u0026DataStructure\\004ReverseQuadTree.cpp",
+              "RelativeDocumentMoniker": "004ReverseQuadTree.cpp",
+              "ToolTip": "D:\\CodePrac\\Algorithm_Prac\\Algorithm_Practice\\Algorithm\u0026DataStructure\\004ReverseQuadTree.cpp",
+              "RelativeToolTip": "004ReverseQuadTree.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-03T07:34:51.723Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "004ReverseQuadTree.cpp",
-              "DocumentMoniker": "C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\Project1\\004ReverseQuadTree.cpp",
-              "RelativeDocumentMoniker": "004ReverseQuadTree.cpp",
-              "ToolTip": "C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\Project1\\004ReverseQuadTree.cpp",
-              "RelativeToolTip": "004ReverseQuadTree.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAADwvxYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-05T06:24:06.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "003Karatsuba.cpp",
-              "DocumentMoniker": "C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\Project1\\003Karatsuba.cpp",
+              "DocumentMoniker": "D:\\CodePrac\\Algorithm_Prac\\Algorithm_Practice\\Algorithm\u0026DataStructure\\003Karatsuba.cpp",
               "RelativeDocumentMoniker": "003Karatsuba.cpp",
-              "ToolTip": "C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\Project1\\003Karatsuba.cpp",
+              "ToolTip": "D:\\CodePrac\\Algorithm_Prac\\Algorithm_Practice\\Algorithm\u0026DataStructure\\003Karatsuba.cpp",
               "RelativeToolTip": "003Karatsuba.cpp",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAG4AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-05T06:24:06.085Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "002BoardCover.cpp",
-              "DocumentMoniker": "C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\Project1\\002BoardCover.cpp",
-              "RelativeDocumentMoniker": "002BoardCover.cpp",
-              "ToolTip": "C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\Project1\\002BoardCover.cpp",
-              "RelativeToolTip": "002BoardCover.cpp",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAkwFkAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-05T06:24:06.086Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "001PICNIC.cpp",
-              "DocumentMoniker": "C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\Project1\\001PICNIC.cpp",
-              "RelativeDocumentMoniker": "001PICNIC.cpp",
-              "ToolTip": "C:\\Users\\clanb\\OneDrive\\Documents\\GitHub\\Algorithm_Practice\\Project1\\001PICNIC.cpp",
-              "RelativeToolTip": "001PICNIC.cpp",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAkwDYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-05T06:24:06.087Z",
+              "WhenOpened": "2025-02-03T07:34:48.619Z",
               "EditorCaption": ""
             }
           ]

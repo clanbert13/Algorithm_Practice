@@ -27,5 +27,8 @@
     <ClCompile Include="004ReverseQuadTree.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="005CuttingFence7.4.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
