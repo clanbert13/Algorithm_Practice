@@ -1,2 +1,2 @@
 # Algorithm_Prac
- personal pratice repository
+구종만님의 저서인 알고리즘 문제 해결 전략을 보면서 풀어본 코드들입니다.
