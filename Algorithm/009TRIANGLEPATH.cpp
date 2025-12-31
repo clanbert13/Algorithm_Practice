@@ -41,4 +41,23 @@
 341
 
 */
+#include <iostream>
 
+#define MAX_NUMBER 100000
+
+int C, n, triangle[100][100];
+int cache[100][100][MAX_NUMBER * 100 + 1];
+
+int path1(int y, int x, int sum) {
+  // 기저 사례: 삼각형의 맨 아래에 도달한 경우
+  if (y == n - 1)
+    return triangle[y][x];
+
+  // 메모이제이션 
+  int& ret = cache[y][x][sum];
+  if (ret != -1)
+    return ret;
+
+  sum+= triangle[y][x];
+  return ret = std::max(path1(y + 1, x, sum), path1(y + 1, x + 1, sum));
+}
