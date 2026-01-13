@@ -1,0 +1,165 @@
+/*
+244p 8.9 Quantization
+
+문제
+
+Quantization (양자화) 과정은, 더 넓은 범위를 갖는 값들을 작은 범위를 갖는 값들로 근사해 표현함으로써 자료를 손실 압축하는 과정을 말한다. 
+예를 들어 16비트 JPG 파일을 4컬러 GIF 파일로 변환하는 것은 RGB 색 공간의 색들을 4컬러 중의 하나로 양자화하는 것이고, 
+키가 161, 164, 170, 178 인 학생 넷을 '160대 둘, 170대 둘' 이라고 축약해 표현하는 것 또한 양자화라고 할 수 있다.
+
+1000 이하의 자연수들로 구성된 수열을 최대 S종류 의 값만을 사용하도록 양자화하고 싶다. 
+이 때 양자화된 숫자는 원래 수열에 없는 숫자일 수도 있다. 양자화를 하는 방법은 여러 가지가 있다. 
+수열 1 2 3 4 5 6 7 8 9 10 을 2개의 숫자만을 써서 표현하려면, 
+3 3 3 3 3 7 7 7 7 7 과 같이 할 수도 있고,
+ 1 1 1 1 1 10 10 10 10 10 으로 할 수도 있다. 
+ 우리는 이 중, 각 숫자별 오차 제곱의 합을 최소화하는 양자화 결과를 알고 싶다.
+
+예를 들어, 수열 1 2 3 4 5 를 
+1 1 3 3 3 으로 양자화하면 오차 제곱의 합은 0+1+0+1+4=6 이 되고, 
+2 2 2 4 4 로 양자화하면 오차 제곱의 합은 1+0+1+0+1=3 이 된다.
+
+수열과 S 가 주어질 때, 가능한 오차 제곱의 합의 최소값을 구하는 프로그램을 작성하시오.
+
+입력
+
+입력의 첫 줄에는 테스트 케이스의 수 C (1 <= C <= 50) 가 주어진다. 
+각 테스트 케이스의 첫 줄에는 수열의 길이 N (1 <= N <= 100), 
+사용할 숫자의 수 S (1 <= S <= 10) 이 주어진다. 
+그 다음 줄에 N개의 정수로 수열의 숫자들이 주어진다. 
+수열의 모든 수는 1000 이하의 자연수이다.
+
+출력
+
+각 테스트 케이스마다, 주어진 수열을 최대 S 개의 수로 양자화할 때 오차 제곱의 합의 최소값을 출력한다.
+
+예제 입력
+2
+10 3
+3 3 3 1 2  3 2 2 2 1
+9 3
+1 744 755 4 897 902 890 6 777
+
+예제 출력
+0
+651
+*/
+
+/*
+우선 수열을 정렬하고 사용할 숫자의 수 S만큼으로 나누면
+비슷한 값끼리 뭉친다.
+
+이 나누는 기준을 어떻게 세워야할까 고민
+
+나눈 수열의 오차 제곱의 합이 최소가 되려면?
+해당 수열의 평균? 중앙?
+ex) 1 2 2 2 5 6 7
+중앙 : 2 [-1 0 0 0 3 4 5] : 51
+평균 : 3.57...(3) [-2 -1 -1 -1 2 3 4] : 36
+(4) [-3 -2 -2 -2 -1 0 1] : 23
+
+평균값에 반올림 하는게 가장 좋을 듯?
+
+
+재귀적 구조는 어떻게?
+최소 오류 제곱 합을 반환하는 Quantize(begin, parts) : begin부터 끝까지 parts만큼으로 수열을 나눈다
+최소 오류 계산 함수 MinError(begin, end) : begin부터 end까지 평균 값으로 오차 제곱 값 반환
+size만큼 수열을 1번 나눈다면
+solve(from, parts) = min( MinError(from, size) + solve(from + size, parts - 1))
+
+평균값을 반복되는 계산에 cache를 도입 :
+2차원 배열을 만들어서 전처리 구조의 cache[시작 구간][끝 구간]
+ㄴ 꺼내쓸때 O(1)이지만 메모리 사용량이 커질 우려가 있음..
+
+종만북 풀이 : 
+구간의 숫자들을 A(i), 평균을 m이라 한다면
+오차 = Σ( A(i) - m )^2 <= 이를 전개 + 분배하면
+오차 = ΣA^2(제곱의 합) - -2m * ΣA(i) + m^2 * Σ1(개수)
+이로 1차원 배열[ pSum(숫자의 누적합), pSqSum(제곱의 부분 합) ]로 만들어 공식에 대입하면 오차를 구할 수 있다.
+*/
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cstring>
+
+using namespace std;
+
+int N, S;
+int A[101];
+int pSum[101];   // 합의 부분합
+int pSqSum[101]; // 제곱의 부분합
+int cache[101][11];
+
+const int INF = 987654321;
+
+// 부분 합 미리 계산 (매 테스트 케이스마다 호출)
+void Precompute() {
+    sort(A, A + N);
+
+    pSum[0] = A[0];
+    pSqSum[0] = A[0] * A[0];
+
+    for (int i = 1; i < N; ++i) {
+        pSum[i] = pSum[i - 1] + A[i];
+        pSqSum[i] = pSqSum[i - 1] + (A[i] * A[i]);
+    }
+}
+
+// 최소 오차 제곱 합
+// 부분 합을 이용해 반복문 없이 O(1)에 계산
+int MinError(int lo, int hi) {
+    int sum = pSum[hi] - (lo == 0 ? 0 : pSum[lo - 1]);
+    int sqSum = pSqSum[hi] - (lo == 0 ? 0 : pSqSum[lo - 1]);
+
+    int count = hi - lo + 1;
+    int m = int(0.5 + (double)sum / count);
+
+    // 전개된 공식: Σ(A-m)^2 = ΣA^2 - 2mΣA + m^2*count
+    int result = sqSum - (2 * m * sum) + (m * m * count);
+    return result;
+}
+
+int Quantize(int from, int parts) {
+  // 기저 사례: 모든 숫자를 다 처리했을 때 - 성공
+  if (from == N) return 0;
+  
+  // 기저 사례: 숫자가 남았는데 묶음을 다 썼을 때 - 실패
+  if (parts == 0) return INF;
+
+  // 메모이제이션
+  int& ret = cache[from][parts];
+  if (ret != -1) return ret;
+
+  ret = INF;
+
+  // 조각의 길이를 1부터 하나씩 늘려가며 시도
+  // (from + size)가 N을 넘지 않아야 함
+  for (int size = 1; from + size <= N; ++size) 
+    ret = min(ret, MinError(from, from + size - 1) + Quantize(from + size, parts - 1));
+
+  return ret;
+}
+
+int main() {
+  int C;
+  vector<int> results;
+
+  cin >> C;
+
+  while (C--) {
+    cin >> N >> S;
+    for (int i = 0; i < N; ++i) 
+      cin >> A[i];
+    
+
+    Precompute(); // 정렬 및 부분 합 계산
+
+    memset(cache, -1, sizeof(cache)); // 캐시 초기화
+
+    results.push_back(Quantize(0, S));
+  }
+
+  for (int res : results) 
+    cout << res << '\n';
+
+  return 0;
+}
