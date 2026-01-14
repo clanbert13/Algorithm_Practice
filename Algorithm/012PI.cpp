@@ -113,12 +113,11 @@
 // }
 
 // int main(){
-//   vector<int> f_result;
 //   int C;
 
 //   cin >> C;
 
-//   for(int i = 0; i < C; i++){
+//   while(C--){
 //     string input;
     
 //     cin >> input;
@@ -128,13 +127,10 @@
 //     // 캐시 초기화
 //     memset(cache, -1, sizeof(cache));
 
-//     f_result.push_back(CalcDifficulty(0));
+//     cout << CalcDifficulty(0) << '\n';
 
 //     s.clear();  // 입력된 수열 초기화
 //   }
 
-//   for(int i : f_result)
-//     cout << i << '\n';
-  
 //   return 0;
 // }

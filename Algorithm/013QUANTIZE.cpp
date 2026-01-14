@@ -77,7 +77,6 @@
 // 이로 1차원 배열[ pSum(숫자의 누적합), pSqSum(제곱의 부분 합) ]로 만들어 공식에 대입하면 오차를 구할 수 있다.
 // */
 // #include <iostream>
-// #include <vector>
 // #include <algorithm>
 // #include <cstring>
 
@@ -141,7 +140,6 @@
 
 // int main() {
 //   int C;
-//   vector<int> results;
 
 //   cin >> C;
 
@@ -155,11 +153,7 @@
 
 //     memset(cache, -1, sizeof(cache)); // 캐시 초기화
 
-//     results.push_back(Quantize(0, S));
+//     cout << Quantize(0, S)  << '\n';
 //   }
-
-//   for (int res : results) 
-//     cout << res << '\n';
-
 //   return 0;
 // }

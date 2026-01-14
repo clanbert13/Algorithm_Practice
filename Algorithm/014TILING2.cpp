@@ -24,7 +24,6 @@
 // 782204094
 // */
 // #include <iostream>
-// #include <vector>
 // #include <cstring>
 
 // using namespace std;
@@ -45,7 +44,6 @@
 // }
 
 // int main() {
-//   vector<int> res;
 //   int C;
 //   cin >> C;
   
@@ -57,11 +55,8 @@
 //     int n;
 //     cin >> n;
 
-//     res.push_back(tiling(n));
+//     cout << tiling(n) << '\n';
 //   }
-
-//   for(int i : res)
-//     cout << i << '\n';
 
 //   return 0;
 // }

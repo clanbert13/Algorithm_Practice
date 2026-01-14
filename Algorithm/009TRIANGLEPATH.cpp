@@ -41,17 +41,6 @@
 // 341
 
 // */
-// #include <iostream>
-// #include <vector>
-// #include <cstring>
-
-// #define MAX_NUMBER 100000
-
-// using namespace std;
-
-// int C, n, triangle[100][100];
-// // int cache1[100][100][MAX_NUMBER * 100 + 1];    // 메모리의 수가 너무 크다! 약 400GB! 
-// int cache2[100][100];
 
 // // int path1(int y, int x, int sum = 0) {
 // //   // 기저 사례: 삼각형의 맨 아래에 도달한 경우
@@ -66,6 +55,19 @@
 // //   sum+= triangle[y][x];
 // //   return ret = std::max(path1(y + 1, x, sum), path1(y + 1, x + 1, sum));
 // // }
+
+
+// #include <iostream>
+// #include <vector>
+// #include <cstring>
+
+// #define MAX_NUMBER 100000
+
+// using namespace std;
+
+// int C, n, triangle[100][100];
+// // int cache1[100][100][MAX_NUMBER * 100 + 1];    // 메모리의 수가 너무 크다! 약 400GB! 
+// int cache2[100][100];
 
 // int path2(int y, int x) {
 //   // 기저 사례: 삼각형의 맨 아래에 도달한 경우
@@ -93,7 +95,6 @@
 
 // int main(){
 //   cin >> C;
-//   vector<int> results;
 
 //   for(int c = 0; c < C; c++) {
 //     cin >> n;
@@ -104,13 +105,8 @@
 
 //     memset(cache2, -1, sizeof(cache2));
 
-//     // 최대 경로의 합 계산 및 출력
-//     results.push_back(path2(0, 0));
+//     cout << path2(0, 0) << '\n';
 //   }
-
-//   for(int i = 0; i < C; i++) 
-//     cout << results[i] << endl;
-  
 
 //   return 0;
 // } 

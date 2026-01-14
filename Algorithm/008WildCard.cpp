@@ -148,40 +148,39 @@
 //   // *를 만났을 때
 //   if (W[w] == '*') 
 //     for (int skip = 0; f + skip <= S.size(); skip++) 
-//       if (WildCardMatch(w + 1, f + skip)) 
-//         return cache[w][f] = 1; 
+//       if (WildCardMatch(w + 1, f + skip)) return cache[w][f] = 1; 
 
 //   return cache[w][f] = 0;
 // }
 
 // int main() {
-//   vector<vector<string>> all_results;
+// vector<vector<string>> all_results;
 
-//   cin >> C;
+// cin >> C;
 
 
-//   while (C--) {
-//     cin >> W;
-//     int n;
-//     cin >> n;
-//     vector<string> matched; 
+// while (C--) {
+//   cin >> W;
+//   int n;
+//   cin >> n;
+//   vector<string> matched; 
 
-//     for (int i = 0; i < n; i++) {
-//       cin >> S;
-      
-//       memset(cache, -1, sizeof(cache)); // 캐시 초기화
-//       if (WildCardMatch(0, 0)) 
-//         matched.push_back(S);
-//     }
-      
-//     sort(matched.begin(), matched.end());
-//     all_results.push_back(matched);
+//   for (int i = 0; i < n; i++) {
+//     cin >> S;
+    
+//     memset(cache, -1, sizeof(cache)); // 캐시 초기화
+//     if (WildCardMatch(0, 0)) 
+//       matched.push_back(S);
 //   }
+    
+//   sort(matched.begin(), matched.end());
+//   all_results.push_back(matched);
+// }
 
-//   cout << endl;
-//   for(int i = 0; i < all_results.size(); i++) 
-//       for(const string& file : all_results[i]) 
-//           cout << file << endl;
+// cout << endl;
+// for(int i = 0; i < all_results.size(); i++) 
+//   for(const string& file : all_results[i]) 
+//     cout << file << endl;
 
-//   return 0;
+// return 0;
 // }
