@@ -1,0 +1,79 @@
+/*
+최소 환승 경로
+ 
+시간 제한	메모리 제한	제출	정답	맞힌 사람	정답 비율
+1 초	256 MB	3279	851	541	26.769%
+문제
+어떤 도시의 지하철 노선에 대한 정보가 주어졌을 때, 출발지에서 목적지까지의 최소 환승 경로를 구하는 프로그램을 작성하시오. 실제 경로를 구할 필요는 없고, 환승 회수만을 구하면 된다.
+
+입력
+첫째 줄에 역의 개수 N(1≤N≤100,000), 노선의 개수 L(1≤L≤100,000)이 주어진다. 다음 L개의 줄에는 각 노선이 지나는 역이 순서대로 주어지며 각 줄의 마지막에는 -1이 주어진다. 마지막 줄에는 출발지 역의 번호와 목적지 역의 번호가 주어진다. 역 번호는 1부터 N까지의 정수로 표현된다. 각 노선의 길이의 합은 1,000,000을 넘지 않는다.
+
+출력
+첫째 줄에 최소 환승 회수를 출력한다. 불가능한 경우에는 -1을 출력한다.
+
+예제 입력 1 
+10 3
+1 2 3 4 5 -1
+9 7 10 -1
+7 6 3 8 -1
+1 10
+예제 출력 1 
+2
+*/
+
+#include <iostream>
+#include <queue>
+#include <vector>
+#include <algorithm>
+#define MAX 200001
+
+using namespace std;
+
+int N, L;
+int start, e;
+int visited[MAX];
+vector<int> graph[MAX];
+
+int bfs() {
+	int depth = -1;
+	queue<int> q;
+	q.push({ start });
+	visited[start] = true;
+	while (!q.empty()) {
+		depth++;
+		int sz = q.size();
+		
+		while (sz--) {
+			int cur = q.front();
+			if (cur == e) return (depth - 1) / 2;
+			q.pop();
+			for (int next : graph[cur]) {
+				if (!visited[next]) {
+					q.push(next);
+					visited[next] = true;
+				}
+			}
+		}
+	}
+	return -1;
+}
+
+int main()
+{
+	cin >> N >> L;
+
+	for (int i = 1; i <= L; i++) {
+		while(1) {
+			int a;
+			cin >> a;
+			if (a == -1) break;
+			graph[N + i].push_back(a);
+			graph[a].push_back(N + i);
+		}
+	}
+	cin >> start >> e;
+	cout << bfs();
+
+	return 0;
+}
